@@ -1,9 +1,12 @@
 # Data_Analysis-Project1
+
 Prerequisite for Running the files
+==================================
+
 To view the downloaded Contoso Sales and the Contoso Sales – Original file which are .pbix files on your local device, you will need to install the Power BI software on your system and for the report file which is in PDF format, a PDF reader is needed.
 
-Data Analysis Using Power BI
-============================
+Calculated Fields and Measures in the Power BI Analysis
+========================================================
 
 In the Sales table, there are 2 measures used in the analysis that were not explicitly given in the original power BI file but were calculated using the formulae below:
 
