@@ -1,0 +1,109 @@
+
+cd /
+cd xampp/mysql/bin
+mysql -u root -p -h 127.0.0.1
+
+USE dynamo_consult_db;
+
+-- Query To Categorize Students based on Graduation Status
+SELECT COUNT(*) AS 'No Of Students',
+    IF (enddate>CURRENT_DATE, 'On-Going','Graduated') AS Class 
+    FROM `students`
+    GROUP BY Class;
+
+--Revenue Generated from Present Students and Graduated Students
+SELECT SUM(Amountpaid) AS 'Total Revenue',
+    IF (enddate>CURRENT_DATE, 'On-Going','Graduated') AS Class 
+    FROM `students`
+    GROUP BY Class;
+
+--Students' Population,Courses  and Graduation Status
+SELECT COUNT(*) AS 'No Of Students', coursename, 
+    IF (enddate> CURRENT_DATE, 'On-Going', 'Graduated') AS Class 
+    FROM `students`JOIN courses USING(COURSEID) 
+    GROUP BY coursename,Class ORDER BY coursename;
+
+--Student Population by Region
+SELECT  R.regionname,COUNT(regionid) AS 'Number_Of_Students'
+    FROM students S join centers C USING(centerid) JOIN regions R USING (regionid)
+    GROUP BY R.regionname 
+    ORDER BY COUNT(regionid);
+
+--Top Region by Population
+SELECT  R.regionname,COUNT(regionid) AS 'Number_Of_Students'
+    FROM students S join centers C USING(centerid) JOIN regions R USING (regionid)
+    GROUP BY R.regionname 
+    ORDER BY COUNT(regionid) DESC LIMIT 1;
+
+--Student Population by Centers
+SELECT  C.centername,COUNT(S.centerid) AS 'Number_Of_Students'
+    FROM students S join centers C USING(centerid) 
+    GROUP BY C.centername
+    ORDER BY COUNT(S.centerid) DESC;
+
+--Top 3 Centers by Population
+SELECT  C.centername,COUNT(S.centerid) AS 'Number_Of_Students'
+    FROM students S join centers C USING(centerid) 
+    GROUP BY C.centername
+    ORDER BY COUNT(S.centerid) DESC LIMIT 3;
+
+--Revenue by Centers
+SELECT  C.centername,SUM(S.amountpaid) AS 'Total Revenue'
+    FROM students S join centers C USING (centerid) 
+    GROUP BY C.centername
+    ORDER BY SUM(S.amountpaid) DESC; 
+
+--Top 3 Centers by Revenue
+SELECT  C.centername,SUM(S.amountpaid) AS 'Total Revenue'
+    FROM students S join centers C USING (centerid) 
+    GROUP BY C.centername
+    ORDER BY SUM(S.amountpaid) DESC LIMIT 3;
+
+--Revenue by Session and Gender
+SELECT SS.sessiontype AS Session,S.gender,SUM(amountpaid) AS 'Revenue'
+    FROM students S JOIN session SS USING (sessionid)
+    GROUP BY SS.sessiontype,S.gender
+    ORDER BY SS.sessiontype;
+
+--Revenue by Session and Centers
+SELECT SS.sessiontype Session,C.centername Center,SUM(S.amountpaid) AS 'Total Revenue'
+    FROM students S JOIN centers C USING (centerid) JOIN session SS
+    USING (sessionid)
+    GROUP BY SS.sessiontype,C.centername
+    ORDER BY SUM(S.amountpaid);
+
+--Revenue by Months
+SELECT MONTHNAME(startdate)AS 'Payment Month',SUM(amountpaid) AS 'Total Revenue'
+    FROM students GROUP BY MONTH(startdate)
+    ORDER BY MONTH(startdate);
+
+--Revenue by Gender
+SELECT gender,SUM(amountpaid) AS 'Total Revenue'
+    FROM students GROUP BY gender
+    ORDER BY gender;
+
+--Revenue by Course and Gender
+SELECT C.coursename Course ,S.gender,SUM(S.amountpaid) AS 'Total Revenue' 
+      FROM students S JOIN courses C USING (courseid)
+      GROUP BY C.coursename,S.gender
+      ORDER BY SUM(S.amountpaid);
+
+--Revenue by Session
+SELECT SS.sessiontype,SUM(S.amountpaid) AS 'Total Revenue' 
+        FROM students S JOIN session SS ON S.sessionid= SS.sessionid 
+        GROUP BY SS.sessiontype 
+        ORDER BY SUM(S.amountpaid);
+
+--Revenue by Course
+SELECT C.coursename Course,SUM(S.amountpaid) AS 'Total Revenue' 
+     FROM students S LEFT JOIN courses C ON S.courseid= C.courseid 
+     GROUP BY C.coursename
+     ORDER BY SUM(S.amountpaid);
+
+--Revenue by Gender,Region and Center
+SELECT S.gender,R.regionname Region,C.centername Center,SUM(S.amountpaid) AS 'Total Revenue' 
+    FROM students S JOIN centers C ON S.centerid = C.centerid 
+    JOIN regions R ON C.regionid = R.regionid 
+    GROUP BY S.gender,R.regionname,C.centername 
+    ORDER BY SUM(amountpaid);
+
