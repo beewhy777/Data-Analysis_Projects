@@ -30,9 +30,12 @@ given in the original database but were calculated using analytics function:
 The first one is IF function that was created to categorize students based on the completion 
 time of their programs.                                                  
 The IF formula used is as shown below:
+
  =IF([enddate] >=TODAY(),"on-going","graduated")
 The second one is the FORMAT function that was used to generate the abbreviated month name 
-from the [startdate] column. The formula used is as shown below:
+from the [startdate] column.
+The formula used is as shown below:
+
 =FORMAT([startdate],"MMM")
 
 
