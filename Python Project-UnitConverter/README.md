@@ -9,7 +9,9 @@ Brief Description of the Application:
 This application is a multi-measure Unit Converter that was designed to convert units for different measures. 
 The measures included are time, mass, length, volume, speed, area, fuel consumption and digital storage.          
 The conversion is made possible by utilizing Pandas library to read from the unitconverter.xlsx (Conversion Chart) that 
-contains the 7 different measures, the various units and the corresponding conversion rates between the units.               The App was developed using Python language in Jupyter Notebook and the Tkinter library was used for the App GUI.
+contains the 7 different measures, the various units and the corresponding conversion rates between the units.              
+The App was developed using Python language in Jupyter Notebook and the Tkinter library was used for the App GUI.
+
 The original look of the App can be seen through the link below:
 https://github.com/beewhy777/My_Projects/blob/main/Python%20Project-UnitConverter/Screenshots/Original%20App%20Look.png
 
@@ -35,7 +37,8 @@ or you just click on the "CLEAR" button which clears all the present inputs and 
 
 Exception handling feature of the App:
 ======================================
-The App is also equipped with exception handling features which enables the App to catch exceptions such as wrong combination of inputs into the App or inputting a non-numerical value into the "Qty to Covert" box which is meant to accept only integers or floating numbers. The above exception handling cases are captured in the screenshots which can be accessed through the links below:
+The App is also equipped with exception handling features which enables the App to catch exceptions such as wrong combination 
+of inputs into the App or inputting a non-numerical value into the "Qty to Covert" box which is meant to accept only integers or floating numbers. The above exception handling cases are captured in the screenshots which can be accessed through the links below:
 
 https://github.com/beewhy777/My_Projects/blob/main/Python%20Project-UnitConverter/Screenshots/Wrong%20Combination%20of%20Inputs.png
 
@@ -43,7 +46,8 @@ https://github.com/beewhy777/My_Projects/blob/main/Python%20Project-UnitConverte
        
 Final word on the use of the App:
 =================================
-It should be noted that the App can only be replicated in its full capacity if the Jupyter Notebook file, the excel worksheet (conversion chart) and all the necessary image files are all in the same directory.
+It should be noted that the App can only be replicated in its full capacity if the Jupyter Notebook file, the excel 
+worksheet (conversion chart) and all the necessary image files are all in the same directory.
 
 
 
