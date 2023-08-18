@@ -25,7 +25,7 @@ into the "Qty to Convert" box
 
 The look of the App before clicking on the "CONVERT” button is shown in the link below:
 
-(https://github.com/beewhy777/My_Projects/blob/main/Python%20Project-UnitConverter/Screenshots/App%20Before%20Clicking%20Convert.png)
+https://github.com/beewhy777/My_Projects/blob/main/Python%20Project-UnitConverter/Screenshots/App%20Before%20Clicking%20Convert.png
 
 The look of the App after clicking on the "CONVERT” button is shown in the link below:
 Fig 1.2 The App after clicking "CONVERT" 
