@@ -33,3 +33,18 @@ In order to carry out a different unit conversion- choose a different measure, e
 to convert, select the unit you want to convert from and the unit you want to convert to and then click the "CONVERT" button
 or you just click on the "CLEAR" button which clears all the present inputs and the App is then ready for a new set of inputs.
 
+Exception handling feature of the App:
+======================================
+The App is also equipped with exception handling features which enables the App to catch exceptions such as wrong combination of inputs into the App or inputting a non-numerical value into the "Qty to Covert" box which is meant to accept only integers or floating numbers. The above exception handling cases are captured in the screenshots which can be accessed through the links below:
+
+Fig 1.3 A non-numerical value inputted                   
+Fig 1.4 An invalid value inputted         
+
+Final word on the use of the App:
+=================================
+It should be noted that the App can only be replicated in its full capacity if the code inside the Jupyter Notebook file, the excel worksheet (conversion chart) and all the necessary image files are all in the same directory.
+
+
+
+
+
