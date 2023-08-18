@@ -9,7 +9,10 @@ Brief Description of the Application:
 This application is a multi-measure Unit Converter that was designed to convert units for different measures. 
 The measures included are time, mass, length, volume, speed, area, fuel consumption and digital storage.          
 The conversion is made possible by utilizing Pandas library to read from the unitconverter.xlsx (Conversion Chart) that 
-contains the 7 different measures, the various units and the corresponding conversion rates between the units.                                                                                          The App was developed using Python language in Jupyter Notebook and the Tkinter library was used for the App GUI.
+contains the 7 different measures, the various units and the corresponding conversion rates between the units.               The App was developed using Python language in Jupyter Notebook and the Tkinter library was used for the App GUI.
+The original look of the App can be seen through the link below:
+
+[Original Look of App]( Python Project-UnitConverter/Screenshots/Original App Look.png)
 
 The Steps for using the Unit Converter App:
 ===========================================
