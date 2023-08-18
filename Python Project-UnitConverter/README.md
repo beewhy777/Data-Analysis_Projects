@@ -43,7 +43,7 @@ https://github.com/beewhy777/My_Projects/blob/main/Python%20Project-UnitConverte
        
 Final word on the use of the App:
 =================================
-It should be noted that the App can only be replicated in its full capacity if the code inside the Jupyter Notebook file, the excel worksheet (conversion chart) and all the necessary image files are all in the same directory.
+It should be noted that the App can only be replicated in its full capacity if the Jupyter Notebook file, the excel worksheet (conversion chart) and all the necessary image files are all in the same directory.
 
 
 
