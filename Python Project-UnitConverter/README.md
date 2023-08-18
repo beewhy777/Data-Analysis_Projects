@@ -11,8 +11,7 @@ The measures included are time, mass, length, volume, speed, area, fuel consumpt
 The conversion is made possible by utilizing Pandas library to read from the unitconverter.xlsx (Conversion Chart) that 
 contains the 7 different measures, the various units and the corresponding conversion rates between the units.               The App was developed using Python language in Jupyter Notebook and the Tkinter library was used for the App GUI.
 The original look of the App can be seen through the link below:
-
-(https://github.com/beewhy777/My_Projects/blob/main/Python%20Project-UnitConverter/Screenshots/Original%20App%20Look.png)
+https://github.com/beewhy777/My_Projects/blob/main/Python%20Project-UnitConverter/Screenshots/Original%20App%20Look.png
 
 The Steps for using the Unit Converter App:
 ===========================================
