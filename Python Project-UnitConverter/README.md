@@ -23,9 +23,11 @@ into the "Qty to Convert" box
 - Select Kilogram from the "Convert From " dropdown box and select Pound from the "Convert To" dropdown box
 - Click on the "CONVERT” button.
 
-The look of the App before and after clicking on the "CONVERT” button are shown in the links below:
+The look of the App before clicking on the "CONVERT” button is shown in the link below:
 
-Fig 1.1 The App before clicking   "CONVERT"         
+Fig 1.1 The App before clicking   "CONVERT"  
+
+The look of the App after clicking on the "CONVERT” button is shown in the link below:
 Fig 1.2 The App after clicking "CONVERT" 
 
 In order to carry out a different unit conversion- choose a different measure, enter the numerical quantity you intend 
