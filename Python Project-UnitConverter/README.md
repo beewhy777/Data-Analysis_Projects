@@ -27,7 +27,7 @@ The look of the App before clicking on the "CONVERT” button is shown in the li
 https://github.com/beewhy777/My_Projects/blob/main/Python%20Project-UnitConverter/Screenshots/App%20Before%20Clicking%20Convert.png
 
 The look of the App after clicking on the "CONVERT” button is shown in the link below:
-Fig 1.2 The App after clicking "CONVERT" 
+https://github.com/beewhy777/My_Projects/blob/main/Python%20Project-UnitConverter/Screenshots/App%20After%20Clicking%20Convert.png 
 
 In order to carry out a different unit conversion- choose a different measure, enter the numerical quantity you intend 
 to convert, select the unit you want to convert from and the unit you want to convert to and then click the "CONVERT" button
